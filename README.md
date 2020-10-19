@@ -1,10 +1,10 @@
 # H2SPEC
-Compute the spectral line list and the vacuum ultraviolet spectrum of 
-H<sub>2</sub>.
+Compute the spectral line list and spectrum of H<sub>2</sub> in the
+vacuum ultraviolet region.
 
 <h3>Description</h3>
 <p>The program <tt>h2spec</tt> computes a list of allowed optical
-transitions for the Lyman (<i>B-->X</i>) and Werner (<i>C-->X</i>)
+transitions for the Lyman (<i>B&rarr;X</i>) and Werner (<i>C&rarr;X</i>)
 bands of the hydrogen molecule, using available experimental and 
 theoretical data. The generated line list is written to the file,
 <tt>h2lines.dat</tt>. <tt>h2spec</tt> also uses the line 
