@@ -13,6 +13,9 @@ molecule, under specified excitation conditions and spectral
 resolution. The spectrum is written to the file, <tt>h2vuv.dat</tt>.
 </p>
 
+<p><tt>h2spec</tt> was used in the research reported in References
+1--4.</p>
+
 <h3>Build</h3>
 <p>Under Linux, gfortran may be used to build h2spec from source:<br><br>
 
@@ -28,7 +31,10 @@ J. Phys. B <b>21</b>, 2871--2878 (1988).<br>
 2. J. Kielkopf, K. Myneni, and F. Tomkins, <i>Unusual fluorescence
 from</i> H<sub>2</sub> <i>excited by multiphoton processes</i>,
 J. Phys. B <b>23</b>, 251--261 (1990).<br>
-3. J. F. Kielkopf and N. F. Allard, <i>Observation of the far wing
+3. J. F. Kielkopf and N. F. Allard, <i>Satellites on Lyman alpha
+due to</i> H-H <i>and</i> H-H<sup>-</sup> <i>collisions</i>,
+Astrophysical Journal <b>450</b>:L75--L78 (1995).<br>
+4. J. F. Kielkopf and N. F. Allard, <i>Observation of the far wing
 of Lyman &alpha; due to neutral atom and ion collisions in a
 laser-produced plasma</i>, Phys. Rev. A <b>58</b>, 4416--4425
 (1998).<br>
