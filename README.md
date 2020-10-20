@@ -14,14 +14,69 @@ resolution. The spectrum is written to the file, <tt>h2vuv.dat</tt>.
 </p>
 
 <p><tt>h2spec</tt> was used in the research reported in References
-1--4.</p>
+1--4. Input data sources for <tt>h2spec</tt> are described in Appendix
+I and Appendix II of [5] -- this information is also provided below.
+</p>
 
 <h3>Build</h3>
-<p>Under Linux, gfortran may be used to build h2spec from source:<br><br>
+<p>Under Linux, gfortran may be used to build <tt>h2spec</tt>
+from source:<br><br>
 
 	$ gfortran -o h2spec h2spec.f
 <br>
-<br>
+
+<h3>Energy Levels and Transition Oscillator Strengths</h3>
+<p>
+Energy levels for the <i>X</i>, <i>B</i>, and <i>C</i> electronic
+states of H<sub>2</sub> were obtained from the following sources.
+</p><br>
+<h4><i>X</i> levels</h4>
+<p>
+Herzberg and Howe [6] list the <i>X</i>, <i>v</i> = 0--14,
+<i>J</i> = 0 levels. The energies of higher <i>J</i> levels were
+computed with the expression,<br><br>
+<i>E(v,J)</i> = <i>G<sub>0</sub>(v) + B<sub>v</sub>J(J+1) -
+D<sub>v</sub>J<sup>2</sup>(J+1)<sup>2</sup> +
+H<sub>v</sub>J<sup>3</sup>(J+1)<sup>3</sup>
+<br><br>
+where <i>G<sub>0</sub>(v)</i> is the energy of the <i>v, J</i>=0
+level, and <i>B<sub>v</sub></i>, <i>D<sub>v</sub></i>, and
+<i>H<sub>v</sub></i> are constants given in [6].<br>
+</p><br>
+<h4><i>B</i> Levels</h4>
+<p>
+<i>G<sub>0</sub>(v)</i> values for <i>v</i>=0 to <i>v</i>=5 were
+taken from Herzberg and Howe [6]. However, values for <i>v</i>=6
+to <i>v</i>=13 were obtained from their wavelength tables for
+transitions arising from the given <i>v</i> state and the energy
+levels obtained for the ground state. For <i>J</i> &gt; 0, the
+energy levels were taken from Crosswhite [7]. A shift of 8.04 
+cm<sup>-1</sup> had to be added to the <i>B</i> state energy
+levels from Crosswhite in order to make them consistent with the
+wavelength measurements of Herzberg and Howe [6]. The 
+<i>v</i>=14, <i>J</i>=0 and <i>v</i>=15, <i>J</i>=0 levels were
+taken from Monfils [8].
+</p><br>
+<h4><i>C</i> Levels</h4>
+<p>
+The energy levels for the <i>C</i> state were taken from
+Crosswhite [7]. Again, a shift of 8.04 cm<sup>-1</sup> was
+added to the levels reported in this source to place them
+on a consistent scale with the lower levels.</p><br>
+<h4>Oscillator Strengths for <i>B</i>&rarr;<i>X</i> and
+<i>C</i>&rarr;<i>X</i> Transitions</h4>
+<p>
+The band oscillator strengths in <tt>xbf.dat</tt> and 
+<tt>xcf.dat</tt> are reproduced from Allison and Dalgarno [9].
+The oscillator strength for an individual rotation-vibration
+transition is related to the band oscillator strength by<br><br>
+<i>f<sub>v'v''J'J''</sub></i> = 
+<i>L<sub>J'J''</sub>f<sub>v'v''</sub></i> / (2<i>J''</i> + 1),
+<br><br>
+where <i>L<sub>J'J''</sub></i> is the H&ouml;l-London factor. The
+double-primed quantities refer to the lower level, and the
+single-primed quantities refer to the upper level.
+
 
 <h3>References</h3>
 
@@ -38,4 +93,19 @@ Astrophysical Journal <b>450</b>:L75--L78 (1995).<br>
 of Lyman &alpha; due to neutral atom and ion collisions in a
 laser-produced plasma</i>, Phys. Rev. A <b>58</b>, 4416--4425
 (1998).<br>
-
+5. K. Myneni, <i>Excited State Populations of</i> H<sub>2</sub>
+<i> in a Glow Discharge</i>, M.S. Thesis, Dept. of Physics,
+University of Louisville, 1987.<br>
+6. G. Herzberg and L. L. Howe, <i>The Lyman Bands of Molecular 
+Hydrogen</i>, Can. J. Phys. <b>37</b>, 636--659 (1959).<br>
+7. H. M. Crosswhite, <i>The hydrogen molecule wavelength tables
+of Gerhard Heinrich Dieke</i>, (New York: Wiley-Interscience),
+1972.<br>
+8. A. Monfils, <i>Absorption spectra of molecules</i> 
+H<sub>2</sub>, HD, and D<sub>2</sub>: <i>VII. Vibrational 
+constants of the B, B', B'', C, D, D', and D'' states</i>, 
+J. Molec. Spec. <b>25</b>, 513--543 (1968).<br>
+9. A. C. Allison and A. Dalgarno, <i>Band oscillator strengths
+and transition probabilities for the Lyman and Werner systems of</i>
+H<sub>2</sub>, HD, and D<sub>2</sub>, Atomic Data <b>1</b>, 
+289--304 (1969).<br>
