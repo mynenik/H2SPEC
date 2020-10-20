@@ -20,7 +20,7 @@ I and Appendix II of [5] -- this information is also provided below.
 
 <h3>Build</h3>
 <p>Under Linux, gfortran may be used to build <tt>h2spec</tt>
-from source:<br><br>
+from source:<br>
 
 	$ gfortran -o h2spec h2spec.f
 <br>
@@ -29,40 +29,43 @@ from source:<br><br>
 <p>
 Energy levels for the <i>X</i>, <i>B</i>, and <i>C</i> electronic
 states of H<sub>2</sub> were obtained from the following sources.
-</p><br>
-<h4><i>X</i> levels</h4>
+</p>
+<h4><i>X</i> Levels</h4>
 <p>
-Herzberg and Howe [6] list the <i>X</i>, <i>v</i> = 0--14,
-<i>J</i> = 0 levels. The energies of higher <i>J</i> levels were
-computed with the expression,<br><br>
+Energy levels for the <i>X</i> ground electronic state are
+found in <tt>xlevels.dat</tt>. Herzberg and Howe [6] list the 
+<i>X</i>, <i>v</i> = 0--14, <i>J</i> = 0 levels. Energies 
+of higher <i>J</i> levels were computed with the expression,<br><br>
 <i>E(v,J)</i> = <i>G<sub>0</sub>(v) + B<sub>v</sub>J(J+1) -
 D<sub>v</sub>J<sup>2</sup>(J+1)<sup>2</sup> +
-H<sub>v</sub>J<sup>3</sup>(J+1)<sup>3</sup>
-<br><br>
+H<sub>v</sub>J<sup>3</sup>(J+1)<sup>3</sup></i>
+<br>
 where <i>G<sub>0</sub>(v)</i> is the energy of the <i>v, J</i>=0
 level, and <i>B<sub>v</sub></i>, <i>D<sub>v</sub></i>, and
 <i>H<sub>v</sub></i> are constants given in [6].<br>
 </p><br>
 <h4><i>B</i> Levels</h4>
 <p>
-<i>G<sub>0</sub>(v)</i> values for <i>v</i>=0 to <i>v</i>=5 were
-taken from Herzberg and Howe [6]. However, values for <i>v</i>=6
-to <i>v</i>=13 were obtained from their wavelength tables for
-transitions arising from the given <i>v</i> state and the energy
-levels obtained for the ground state. For <i>J</i> &gt; 0, the
-energy levels were taken from Crosswhite [7]. A shift of 8.04 
-cm<sup>-1</sup> had to be added to the <i>B</i> state energy
-levels from Crosswhite in order to make them consistent with the
-wavelength measurements of Herzberg and Howe [6]. The 
-<i>v</i>=14, <i>J</i>=0 and <i>v</i>=15, <i>J</i>=0 levels were
-taken from Monfils [8].
-</p><br>
+Energy levels for the <i>B</i> electronic state are found in
+<tt>blevels.dat</tt>. <i>G<sub>0</sub>(v)</i> values for 
+<i>v</i>=0 to <i>v</i>=5 were taken from Herzberg and Howe[6]. 
+However, values for <i>v</i>=6 to <i>v</i>=13 were obtained from 
+their wavelength tables for transitions arising from the given 
+<i>v</i> state and the energy levels obtained for the ground state. 
+For <i>J</i> &gt; 0, the energy levels were taken from 
+Crosswhite[7]. A shift of 8.04 cm<sup>-1</sup> had to be added to 
+the <i>B</i> state energy levels from Crosswhite in order to make 
+them consistent with the wavelength measurements of Herzberg and 
+Howe[6]. The <i>v</i>=14, <i>J</i>=0 and <i>v</i>=15, <i>J</i>=0 
+levels were taken from Monfils[8].
+</p>
 <h4><i>C</i> Levels</h4>
 <p>
-The energy levels for the <i>C</i> state were taken from
-Crosswhite [7]. Again, a shift of 8.04 cm<sup>-1</sup> was
-added to the levels reported in this source to place them
-on a consistent scale with the lower levels.</p><br>
+Energy levels for the <i>C</i> state in <tt>clevels.dat</tt>
+were taken from Crosswhite [7]. Again, a shift of 
+8.04 cm<sup>-1</sup> was added to the levels reported in this 
+source to place them on a consistent scale with the lower levels.
+</p>
 <h4>Oscillator Strengths for <i>B</i>&rarr;<i>X</i> and
 <i>C</i>&rarr;<i>X</i> Transitions</h4>
 <p>
@@ -76,7 +79,7 @@ transition is related to the band oscillator strength by<br><br>
 where <i>L<sub>J'J''</sub></i> is the H&ouml;l-London factor. The
 double-primed quantities refer to the lower level, and the
 single-primed quantities refer to the upper level.
-
+</p>
 
 <h3>References</h3>
 
