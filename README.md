@@ -39,11 +39,11 @@ of higher <i>J</i> levels were computed with the expression,<br><br>
 <i>E(v,J)</i> = <i>G<sub>0</sub>(v) + B<sub>v</sub>J(J+1) -
 D<sub>v</sub>J<sup>2</sup>(J+1)<sup>2</sup> +
 H<sub>v</sub>J<sup>3</sup>(J+1)<sup>3</sup></i>
-<br>
+<br><br>
 where <i>G<sub>0</sub>(v)</i> is the energy of the <i>v, J</i>=0
 level, and <i>B<sub>v</sub></i>, <i>D<sub>v</sub></i>, and
-<i>H<sub>v</sub></i> are constants given in [6].<br>
-</p><br>
+<i>H<sub>v</sub></i> are constants given in [6].
+</p>
 <h4><i>B</i> Levels</h4>
 <p>
 Energy levels for the <i>B</i> electronic state are found in
@@ -74,9 +74,10 @@ The band oscillator strengths in <tt>xbf.dat</tt> and
 The oscillator strength for an individual rotation-vibration
 transition is related to the band oscillator strength by<br><br>
 <i>f<sub>v'v''J'J''</sub></i> = 
-<i>L<sub>J'J''</sub>f<sub>v'v''</sub></i> / (2<i>J''</i> + 1),
+<i>L<sub>J'J''</sub>f<sub>v'v''</sub></i> 
+(2<i>J''</i> + 1)<sup>-1</sup>,
 <br><br>
-where <i>L<sub>J'J''</sub></i> is the H&ouml;l-London factor. The
+where <i>L<sub>J'J''</sub></i> is the H&ouml;nl-London factor. The
 double-primed quantities refer to the lower level, and the
 single-primed quantities refer to the upper level.
 </p>
