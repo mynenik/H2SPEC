@@ -2,6 +2,8 @@
 Compute the spectral line list and spectrum of H<sub>2</sub> in the
 vacuum ultraviolet region.
 
+![h2spec output](h2spec_output.png)
+
 <h3>Description</h3>
 <p>The program <tt>h2spec</tt> computes a list of allowed optical
 transitions for the Lyman (<i>B&rarr;X</i>) and Werner (<i>C&rarr;X</i>)
