@@ -402,7 +402,7 @@ C
 C	Compute G-factor for this band.  The population factors for
 C       parahydrogen (IPP=0) and orthohydrogen (IPP=1) are
 C       are carried by the EXCITE subroutine, where the
-C       statistics are 3:1 in favor of parahydrogen.
+C       statistics are 3:1 in favor of orthohydrogen at room temp.
 
 C	ID=1 for Lyman band and ID=2 for Werner band.
 
