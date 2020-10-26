@@ -46,6 +46,14 @@ where <i>G<sub>0</sub>(v)</i> is the energy of the <i>v, J</i>=0
 level, and <i>B<sub>v</sub></i>, <i>D<sub>v</sub></i>, and
 <i>H<sub>v</sub></i> are constants given in [6].
 </p>
+<p>
+Recent high-precision theoretical calculations of the <i>X</i>
+state ro-vibronic level energies are described in [10--11]. An
+alternative energy level file for the <i>X</i> state, based on
+the calculations of <tt>H2SPECTRE</tt>[10--11] is provided in
+<tt>xlevels-h2spectre.dat</tt>.
+</p>
+
 <h4><i>B</i> Levels</h4>
 <p>
 Energy levels for the <i>B</i> electronic state are found in
@@ -115,3 +123,11 @@ J. Molec. Spec. <b>25</b>, 513--543 (1968).<br>
 and transition probabilities for the Lyman and Werner systems of</i>
 H<sub>2</sub>, HD, and D<sub>2</sub>, Atomic Data <b>1</b>, 
 289--304 (1969).<br>
+10. J. Komasa, M. Puchalski, P. Czachorwoski, G. Lach, and
+K. Pachucki, <i>Rovibrational energy levels of the hydrogen
+molecule through nonadiabatic perturbation theory</i>, Phys.
+Rev. A <b>100</b>, 032519 (2019).<br>
+11. J. Komasa, M. Puchalski, P. Czachorowski, G. Lach, and
+K. Pachucki, <tt>H2SPECTRE</tt> developer's version (28.05.2020),
+https://www.fuw.edu.pl/~krp/ (2020).<br>
+
