@@ -123,7 +123,7 @@ J. Molec. Spec. <b>25</b>, 513--543 (1968).<br>
 and transition probabilities for the Lyman and Werner systems of</i>
 H<sub>2</sub>, HD, and D<sub>2</sub>, Atomic Data <b>1</b>, 
 289--304 (1969).<br>
-10. J. Komasa, M. Puchalski, P. Czachorwoski, G. Lach, and
+10. J. Komasa, M. Puchalski, P. Czachorowski, G. Lach, and
 K. Pachucki, <i>Rovibrational energy levels of the hydrogen
 molecule through nonadiabatic perturbation theory</i>, Phys.
 Rev. A <b>100</b>, 032519 (2019).<br>
